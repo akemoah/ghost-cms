@@ -7,4 +7,4 @@
     - name: install docker-py
       pip: name=docker-py
     - name: verify docker-py version
-      command: docker-py --version
+      command: pip list | egrep 'docker'
