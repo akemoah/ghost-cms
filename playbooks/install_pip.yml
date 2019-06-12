@@ -1,0 +1,10 @@
+---
+- hosts: dockerhost
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install pip
+      apt: name=python-pip state=present
+    - name: Verify PIP version
+      command: pip --version

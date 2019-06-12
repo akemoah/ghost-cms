@@ -1,0 +1,9 @@
+---
+- hosts: dockerhost
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Run the service define in the project 
+      docker_service:
+        project_src: ./docker
