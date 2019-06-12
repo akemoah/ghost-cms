@@ -7,3 +7,4 @@
   tasks:
     - docker_service:
         project_src: ./docker
+        build: yes
