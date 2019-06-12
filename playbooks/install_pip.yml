@@ -8,3 +8,5 @@
       apt: name=python-pip state=present
     - name: Verify PIP version
       command: pip --version
+    - name: Création du dossier db_data
+      command: mkdir db_data

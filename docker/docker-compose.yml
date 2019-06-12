@@ -1,0 +1,26 @@
+version: '2'
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: ghost
+      MYSQL_USER: ghostuser
+      MYSQL_PASSWORD: ocrpassword
+    
+  ghost:
+    links:
+      - mysql
+    container_name: ghost
+    build: ./ghost-cms/docker
+    environment:
+      NODE_ENV: production
+    ports:
+      - "8000:2368"
+    restart: always
+  volumes:
+    db_data: {}
