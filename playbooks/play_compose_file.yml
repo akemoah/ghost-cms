@@ -5,5 +5,5 @@
   become: yes
   become_method: sudo
   tasks:
-      docker_service:
-        project_src: ./docker
+    docker_service:
+      project_src: ./docker
