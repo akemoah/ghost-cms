@@ -5,6 +5,6 @@
   become: yes
   become_method: sudo
   tasks:
-    - docker_compose:
-        project_src: ./docker
-        build: yes
+  docker_compose:
+    project_src: ./docker
+    #build: yes
