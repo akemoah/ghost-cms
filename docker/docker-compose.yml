@@ -16,7 +16,7 @@ services:
     links:
       - mysql
     container_name: ghost
-    build: ./ghost-cms/docker
+    build: .
     environment:
       NODE_ENV: production
     ports:
