@@ -9,4 +9,4 @@
     - name: Verify PIP version
       command: pip --version
     - name: Création des dossiers db_data et ghost
-      command: mkdir db_data && mkdir ghost
+      command: mkdir db_data ghost
