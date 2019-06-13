@@ -9,5 +9,5 @@
       - name: Copie du fichier Dockerfile
         template: src=../docker/Dockerfile dest=/home/vagrant
       - name: Provisionning des services
-        action: shell /home/vagrant/docker-compose up -d
+        action: shell docker-compose up -d
 
