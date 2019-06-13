@@ -1,6 +1,5 @@
 ---
-- hosts: ansible
-  remote_user: vagrant
+- hosts: local
   become: yes
   become_method: sudo
   tasks:
