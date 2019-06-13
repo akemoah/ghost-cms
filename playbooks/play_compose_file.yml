@@ -1,10 +1,10 @@
 ---
-- name: Launch docker-compose file
-  hosts: dockerhost
-  remote_user: vagrant
-  become: yes
-  become_method: sudo
-  tasks:
-  docker_compose:
-    project_src: ./docker
+  - hosts: dockerhost
+    remote_user: vagrant
+    become: yes
+    become_method: sudo
+    tasks:
+      - name: Launch docker-compose file        
+        docker_service:
+          project_src: ./docker
     #build: yes
