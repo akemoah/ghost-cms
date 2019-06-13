@@ -4,9 +4,10 @@
     become: yes
     become_method: sudo
     tasks:
-      - name: Copie des fichiers Docker        
+      - name: Copie du fichier docker compose        
         template: src=../docker/docker-compose.yml dest=/home/vagrant
+      - name: Copie du fichier Dockerfile
         template: src=../docker/Dockerfile dest=/home/vagrant
       - name: Provisionning des services
-        action: shell docker-compose up -d
+        action: shell /home/vagrant/docker-compose up -d
 
