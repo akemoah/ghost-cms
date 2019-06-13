@@ -4,7 +4,8 @@
     become: yes
     become_method: sudo
     tasks:
-      - name: Launch docker-compose file        
-        docker_service:
-          project_src: ./docker
-    #build: yes
+      - name: Copie des fichiers docker        
+        template: src=./docker/ dest=/home/vagrant
+      - name: Provisionning des services
+        action: shell docker-compose up -d
+
