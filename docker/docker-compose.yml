@@ -22,5 +22,5 @@ services:
     ports:
       - "8000:2368"
     restart: always
-  volumes:
-    db_data: {}
+    #  volumes:
+    # db_data: {}
