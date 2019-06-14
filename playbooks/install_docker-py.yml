@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: dockerhost
   become: yes
   become_method: sudo
   tasks:
