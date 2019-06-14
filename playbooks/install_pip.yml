@@ -4,10 +4,6 @@
   become: yes
   become_method: sudo
   tasks:
-    - name: Cleaning Home Directory
-      file:
-        path: /home/vagrant/
-        state: absent
     - name: Install pip
       apt: name=python-pip state=latest
     - name: Verify PIP version
