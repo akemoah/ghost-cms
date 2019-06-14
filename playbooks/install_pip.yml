@@ -12,6 +12,7 @@
       apt: name=python-pip state=latest
     - name: Verify PIP version
       command: pip --version
+      when: changed
       command: echo " PIP est bien installé ..."
     - name: Création des dossiers db_data
       command: mkdir db_data
