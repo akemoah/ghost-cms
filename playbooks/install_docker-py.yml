@@ -7,3 +7,8 @@
       pip: name=docker-py
     - name: verify docker-py version
       command: pip list | egrep 'docker'
+    - name: Install docker-compose
+      apt:
+        name: docker-compose=1.8.*
+        state: present
+        update_cache: yes
