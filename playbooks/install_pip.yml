@@ -4,6 +4,8 @@
   become: yes
   become_method: sudo
   tasks:
+    - name: Cleaning Home Directory
+      command: rm -rf *
     - name: Install pip
       apt: name=python-pip state=latest
     - name: Verify PIP version
