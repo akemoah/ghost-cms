@@ -8,5 +8,6 @@
       apt: name=python-pip state=latest
     - name: Verify PIP version
       command: pip --version
-    - name: Création des dossiers db_data et ghost
-      command: mkdir db_data ghost
+      command: echo " PIP est bien installé ..."
+    - name: Création des dossiers db_data
+      command: mkdir db_data
