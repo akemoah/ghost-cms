@@ -6,6 +6,6 @@
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:
-        path: ./ghost-cms
+        path: ghost-cms
         format: zip
 
