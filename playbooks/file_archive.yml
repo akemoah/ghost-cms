@@ -6,5 +6,6 @@
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:
-        path: /home/vagrant/ghost-cms
-        dest: /home/vagrant/ghost-cms.tgz
+        path: 
+            - ./ghost-cms
+        dest: ./ghost-cms.tgz
