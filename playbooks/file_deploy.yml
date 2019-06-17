@@ -1,0 +1,10 @@
+---
+- hosts: dockerhost
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+tasks:
+  - name: Extract file into current directory
+    unarchive:
+      src: ghost-cms.zip
+      dest: .
