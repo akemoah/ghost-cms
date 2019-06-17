@@ -8,8 +8,8 @@
         template: src=../docker/docker-compose.yml dest=/home/vagrant
       - name: Copie du fichier Dockerfile
         template: src=../docker/Dockerfile dest=/home/vagrant
-      - name: Copie du dossier de configuration de node
-        copy: src=../ghost dest=/home/vagrant/ghost
+        #- name: Copie du dossier de configuration de node
+        #  copy: src=../ghost dest=/home/vagrant/ghost
       - name: Provisionning des services
         action: shell docker-compose up -d
 
