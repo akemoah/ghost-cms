@@ -6,7 +6,7 @@
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:
-        path: .
+        path: ghost-cms
         dest: .
         format: gz
         force_archive: true
