@@ -5,4 +5,9 @@
   become_method: sudo
   tasks:
     - name: Create a zip archive of ghost-cms
-      command: tar czvf ghost-cms.tar.gz
+      archive:
+        path: .
+        dest: .
+        format: gz
+        force_archive: true
+        
