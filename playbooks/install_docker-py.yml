@@ -11,4 +11,4 @@
       apt:
         name: docker-compose=1.8.*
         state: present
-      update_cache: yes
+        update_cache: yes
