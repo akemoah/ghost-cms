@@ -6,8 +6,8 @@
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:
-        path: /home/vagrant/workspace/compressjob
-        dest: /home/vagrant/workspace/compressjob.tgz
+        path: ./workspace/compressjob
+        dest: ./workspace/compressjob.tgz
         #format: gz
         #force_archive: true
         
