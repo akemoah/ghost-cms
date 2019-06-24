@@ -6,8 +6,8 @@
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:
-        path: ./ghost-cms
-        dest: ./ghost-cms.gz
+        path: ./workspace/compressjob
+        dest: ./workspace/compressjob.gz
         #format: gz
         #force_archive: true
         
