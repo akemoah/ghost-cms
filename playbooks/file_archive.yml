@@ -8,6 +8,4 @@
       archive:
         path: ./workspace/compressjob
         dest: ./workspace/compressjob.tgz
-        #format: gz
-        #force_archive: true
         
