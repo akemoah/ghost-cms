@@ -7,6 +7,6 @@
     - name: Unarchive the ghost-cms folder on the docker node
       unarchive:
         src: ./workspace/compressjob.tgz
-        dest: home/vagrant
+        dest: ./
         remote_src: yes
         
