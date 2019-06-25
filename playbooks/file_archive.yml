@@ -2,7 +2,7 @@
 - hosts: local
   #remote_user: ansible
   become: yes
-  #become_method: sudo
+  become_method: sudo
   tasks:
     - name: Create a zip archive of ghost-cms
       archive:

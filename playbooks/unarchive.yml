@@ -1,0 +1,12 @@
+---
+- hosts: dockerhost
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Unarchive the ghost-cms folder on the docker node
+      unarchive:
+        src: ./workspace/compressjob.tgz
+        dest: home/vagrant
+        remote_src: yes
+        
