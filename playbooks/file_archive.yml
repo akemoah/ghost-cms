@@ -6,7 +6,7 @@
   tasks:
     - name: Create a tgz archive of ghost-cms
       archive:
-        path: ./compressjob/*
+        path: ./compressjob/
         dest: ./compressjob.zip
         format: zip
         
