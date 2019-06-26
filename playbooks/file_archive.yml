@@ -7,7 +7,4 @@
     - name: Create a tgz archive of ghost-cms
       archive:
         path: ./workspace/compressjob
-        remove: yes
-        #dest: ./workspace/compressjob.tgz
-        #force_archive: true
-        
+        dest: ./workspace/compressjob.tgz        
