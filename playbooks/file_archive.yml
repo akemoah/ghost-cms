@@ -1,6 +1,6 @@
 ---
 - hosts: local
-  #remote_user: ansible
+  remote_user: ansible
   become: yes
   #become_method: sudo
   tasks:
