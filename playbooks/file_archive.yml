@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.10.4
+- hosts: local
   remote_user: ansible
   become: yes
   become_method: sudo
