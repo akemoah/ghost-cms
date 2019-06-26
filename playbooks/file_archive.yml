@@ -4,7 +4,7 @@
   become: yes
   #become_method: sudo
   tasks:
-    - name: Create a zip archive of ghost-cms
+    - name: Create a tgz archive of ghost-cms
       archive:
         path: ./workspace/compressjob
         dest: ./workspace/compressjob.tgz
